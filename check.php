@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 $userName = $_POST['userName'];
 session_start();
 $_SESSION['userName'] = $userName;
