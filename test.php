@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 $allTests = glob(__DIR__ . './upload/*.json');
 $number = implode($_GET);
 $test = file_get_contents($number);
