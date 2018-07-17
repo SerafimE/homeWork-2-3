@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 foreach (glob('./upload/*.json') as $file) {
     echo "<a href=\"test.php?test=$file\">Тест: $file</a><br>";
 }
