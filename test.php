@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 $filename = $_GET['test'];
 if (!file_exists($filename)) {
-    header('HTTP/1.0 404 Not Found');
+    header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found”);
     exit();
 }
 $allTests = glob(__DIR__ . './upload/*.json');
