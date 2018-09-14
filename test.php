@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 $filename = $_GET['test'];
 if (!file_exists($filename)) {
-    header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found”);
+    header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found');
     exit();
 }
-$allTests = glob(__DIR__ . './upload/*.json');
+$allTests = glob(__DIR__ . './upload/.json');
 $number = implode($_GET);
 $test = file_get_contents($number);
 $testDecode = json_decode($test, true);
